@@ -105,8 +105,8 @@ class NNBasic:
                 print('>epoch=%d, lrate=%.3f, error=%.3f' % (epoch, l_rate, sum_error))
 
     def visualize_epoch(self):
-        for x in np.arange(-1.0, 1.0, 0.1, dtype=float):
-            for y in np.arange(-1.0, 1.0, 0.1, dtype=float):
+        for x in np.arange(-2.0, 2.0, 0.05, dtype=float):
+            for y in np.arange(-2.0, 2.0, 0.05, dtype=float):
                 prediction = self.forward_propagate([x, y, 0.8])
                 # print(prediction)
                 self.pygame.draw(200 + x * 100, 200 + y * 100,
