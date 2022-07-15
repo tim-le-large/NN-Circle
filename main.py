@@ -10,4 +10,4 @@ if __name__ == '__main__':
     n_outputs = 1
     n_inputs = len(dataset[0]) - n_outputs
     nn = NNBasic(n_inputs, 4, n_outputs)
-    nn.train_network(dataset, 0.1, 1000, n_outputs)
+    nn.train_network(dataset, 0.1, 2000, n_outputs)
